@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="@dimen/_30sdp"
+        android:width="@dimen/_30sdp">
+        <selector>
+            <item
+                android:drawable="@drawable/mic_icon_new"
+                android:state_checked="false" />
+            <item
+                android:drawable="@drawable/no_mic_icon_new"
+                android:state_checked="true" />
+            <item android:drawable="@drawable/mic_icon_new" />
+        </selector>
+    </item>
+</layer-list>

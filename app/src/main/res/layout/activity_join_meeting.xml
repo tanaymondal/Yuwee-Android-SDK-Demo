@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.yuwee.yuweesdkdemo.activity.JoinMeetingActivity">
+
+        <EditText
+            android:id="@+id/et_meeting_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Meeting ID" />
+
+        <EditText
+            android:id="@+id/et_meeting_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password" />
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Nick Name" />
+
+        <EditText
+            android:id="@+id/et_user_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Email / Mobile" />
+
+        <Button
+            android:id="@+id/btn_join"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Join" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) YuviTime XS PTE. LTD. 2020.
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_three_dot"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/three_dot_icon_new"
+            android:tint="#000000" />
+
+        <ImageView
+            android:id="@+id/iv_user"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_toEndOf="@id/iv_three_dot"
+            android:layout_toRightOf="@id/iv_three_dot"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_icon_new" />
+
+        <LinearLayout
+            android:id="@+id/ll_middle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_toStartOf="@+id/ll_right"
+            android:layout_toLeftOf="@+id/ll_right"
+            android:layout_toEndOf="@id/iv_user"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Name"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Email"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_hand"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:src="@drawable/hand_raise"
+                android:tint="@color/yuwee_accent_color"
+                android:visibility="gone" />
+
+
+            <CheckBox
+                android:id="@+id/cb_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:button="@drawable/check_sound_bg"
+                android:buttonTint="@color/yuwee_accent_color"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:longClickable="false"
+                android:padding="@dimen/_5sdp" />
+
+            <CheckBox
+                android:id="@+id/cb_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:button="@drawable/check_video_bg"
+                android:buttonTint="@color/yuwee_accent_color"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:longClickable="false"
+                android:padding="@dimen/_5sdp" />
+
+            <ImageView
+                android:id="@+id/iv_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
